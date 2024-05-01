@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    flex-direction: column;
+    background-color: purple;
+}
+
+header,
+main,
+footer {
+    border: 2px solid black;
+    height: 20vh;
+    background-color: grey;
+}
+
+
+main {
+    flex-grow: 2;
+    /* height: 60vh; */
+    /* font-size: 150px; */
+}

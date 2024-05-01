@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: forestgreen;
+}
+
+.container {
+    width: 90vw;
+    height: 90vh;
+    margin: 5vh 5vw;
+    border: 2px solid white;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.transform {
+    background-color: black;
+    height: 30vh;
+    width: 30vh;
+    cursor: pointer;
+}
+
+.transition {
+    background-color: white;
+    height: 30vh;
+    width: 30vh;
+    cursor: pointer;
+}
+
+.animation {
+    background-color: darkred;
+    height: 30vh;
+    width: 30vh;
+    cursor: pointer;
+    border-radius: 50%;
+}

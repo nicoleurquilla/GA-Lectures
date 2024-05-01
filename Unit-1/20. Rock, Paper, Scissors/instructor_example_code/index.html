@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags provide info about your site used by search engines and the browser -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+
+    <!-- Browser tab -->
+    <title>Rock, Paper, Scissors</title>
+    <link href="https://i.imgur.com/Jwh6ELP.png" rel="icon">
+
+    <!-- Linked files -->
+    <link href="./styles.css" rel="stylesheet">
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <!-- Modal element: Displays the welcome message and instructions -->
+    <div id="modal">
+        <div class="modal-content">
+            <h1>Enjoy a quick game of rock, paper, scissors! 😀</h1>
+            <h2>
+                To begin, simply click on either the rock, paper, or scissors picture to make your selection and battle
+                the computer!
+            </h2>
+            <h3>Remember:</h3>
+            <p><span>🪨 > ✂️</span> <span>✂️ > 📃</span> <span>📃 > 🪨</span></p>
+            <button id="close-modal">Play</button>
+        </div>
+    </div>
+
+    <!-- Scoreboard element: Where win, ties, and losses are recorded -->
+    <section class="scoreboard">
+        <header>
+            <h2>Rock</h2>
+            <h2>Paper</h2>
+            <h2>Scissors</h2>
+        </header>
+        <ul>
+            <li id="wins">
+                <h4>WINS</h4>
+                <h1>0</h1>
+            </li>
+            <li id="ties">
+                <h4>TIES</h4>
+                <h1>0</h1>
+            </li>
+            <li id="losses">
+                <h4>LOSSES</h4>
+                <h1>0</h1>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Choices element: Where the user selects rock, paper, or scissors -->
+    <section id="choices">
+        <img class="fighter" id="rock" src="https://i.imgur.com/volQsQG.png">
+        <img class="fighter" id="paper" src="https://i.imgur.com/kD6m2W9.png">
+        <img class="fighter" id="scissors" src="https://i.imgur.com/om0NMTC.png">
+        <h2>Choose your fighter!</h2>
+    </section>
+
+    <!-- Results element: Where the outcomes of a match are displayed, and the "Play Again" button -->
+    <section id="results">
+        <div id="player-choice">
+            <img src="#">
+            <h3>YOU PICKED</h3>
+        </div>
+
+        <div id="result-message">
+            <h1>YOU WIN</h1>
+            <button id="restart">PLAY AGAIN</button>
+        </div>
+
+        <div id="cpu-choice">
+            <img src="#">
+            <h3>CPU PICKED</h3>
+        </div>
+    </section>
+
+    <!-- Button to open the modal -->
+    <footer>
+        <button id="open-modal">RULES</button>
+    </footer>
+</body>
+
+</html>
